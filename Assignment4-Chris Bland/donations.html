@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+    @import url(styles.css);
+            div {
+                  
+                  height: 6px;
+                  background-color: red;
+                  position: relative;
+                  animation-name: box;
+                  animation-duration: 4s;
+                  animation-iteration-count: infinite;
+                
+                  
+                    
+                }
+            @keyframes box {
+              0%   {background-color:white; left:0px; top:0px; opacity: 100%;}
+              25%  {background-color:white; left:0px; top:0px; opacity: 100%;}
+              50%  {background-color:red; left:0px; top:0px; opacity: 100%;}
+              75%  {background-color:gold; left:0px; top:0px; opacity: 100%;}
+              100% {background-color:white; left:0px; top:0px; opacity: 100%;}
+                }
+            
+        </style>
+    
+    </head>
+<body>
+  
+    <h2>Please fill out the following data in order to donate:</h2>
+    <form action="">
+        <h2><label for="dname">Name: </label><br>
+        <input type="text" id="dname" name="dname" size="50" maxlength="20px"><br>
+        
+            
+        <label for="cn">Card Number: </label><br>
+        <input type="text" id="cn" name="cn"><br>
+            
+        <label for="da">Donation Amount: </label><br>
+        <input type="text" id="da" name="da"><br>
+        
+        
+            <a href="index.html">
+            <input type="button" id="donate" value="Donate"/>
+            </a>
+            
+        </h2>
+    </form>
+    <div id="boxroll"> </div>
+</body>
+
+</html>

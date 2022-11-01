@@ -1,0 +1,12 @@
+body {
+    background-color: maroon;
+    font-family:sans-serif; 
+    font-size: 26px;
+}
+.FormsBack{
+    background-color: white;
+}
+@keyframes mymove{
+    from{background-color: white;}
+    to{background-color: gold;}
+}

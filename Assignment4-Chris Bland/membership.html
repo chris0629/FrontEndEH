@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <style>
+    @import url(addstyles.css);
+            
+       @media only screen and (max-width: 576px) {
+                body {background: red;}
+            }
+        @media only screen and (min-width: 768px) {
+                body {background: blue;}
+            }
+        @media only screen and (min-width: 992px) {
+                body {background: gray;}
+            }
+        @media only screen and (min-width: 1200px) {
+                body {background: maroon;}
+            }
+            #btn {
+                  width: 150px;
+                  height: 40px;
+                  position: relative;
+                  animation-name: rainb;
+                  animation-duration: 4s;
+                  animation-iteration-count: infinite;
+            }
+            
+            @keyframes rainb {
+                  0%   {background-color: red;}
+                  25%  {background-color: yellow;}
+                  50%  {background-color: blue;}
+                  100% {background-color: green;}
+            }
+        </style>
+    </head>
+<body>
+    
+    <div class="FormsBack"> 
+        <h2>Create Your Membership Account: </h2>
+    <form action="">
+        <label for="fnamef">First name:</label><br>
+        <input type="text" id="fnamef" name="fnamef"><br>
+            
+        <label for="lnamef">Last name:</label><br>
+        <input type="text" id="lnamef" name="lnamef"><br>
+        
+        <label for="dob">Date Of Birth:</label><br>
+        <textarea name="dob" id="dob"></textarea>
+        <br>
+            <div id="btn">
+            <a href="index.html">
+            <input type="button" id="memberID" value="Create Your Account"/>
+            </a>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
